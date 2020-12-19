@@ -67,6 +67,7 @@ body {
 @media(max-width:900px) {
     .warpper {
         height: 100vh;
+        grid-gap: 0;
         grid-template-columns: auto;
         grid-template-rows: 3.5rem auto 6rem;
         grid-template-areas: "header" "flipbook" "footer";
