@@ -1,30 +1,26 @@
 body {
-    position: relative;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .warpper {
     display: grid;
+    position: fixed;
     width: 100%;
     height: 100vh;
     grid-template-columns: auto 0.2fr;
     grid-template-rows: 3.5rem auto;
-    grid-gap: 1rem;
     grid-template-areas: "header header" "flipbook footer";
 }
 
 .header {
     grid-area: header;
     width: 100%;
-    /* height: 3.5rem; */
-    /* position: relative; */
 }
 
 .flipbook {
     grid-area: flipbook;
-    /* width: 100%; */
-    /* height: 100vh; */
-    /* position: relative; */
 }
 
 .footer {
@@ -64,12 +60,17 @@ body {
     color: black;
 }
 
-@media(max-width:900px) {
+@media(max-width:950px) {
     .warpper {
+        /* height: ; */
         height: 100vh;
+        margin: 0;
         grid-gap: 0;
         grid-template-columns: auto;
-        grid-template-rows: 3.5rem auto 6rem;
+        grid-template-rows: 7vh 75vh auto;
         grid-template-areas: "header" "flipbook" "footer";
+    }
+    .footer {
+        background-color: black;
     }
 }
