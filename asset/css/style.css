@@ -87,7 +87,7 @@ body {
 
 @media(max-width:950px) {
     .warpper {
-        position: fixed;
+        /* position: fixed; */
         /* height: calc(100vh - 52px); */
         height: 100vh;
         margin: 0;
@@ -97,15 +97,15 @@ body {
         grid-template-areas: "header" "flipbook" "footer" "socialmedia";
     }
     .footer {
-        border-top: 3rem;
+        /* border-top: 3rem; */
         background-color: black;
         border-radius: .6rem .6rem 0 0;
         margin-top: 1vh;
         flex-direction: column;
+        justify-content: flex-end;
     }
     .footer-text {
         color: white;
-        padding-top: .6rem;
         align-self: center;
     }
     .arrow {
@@ -133,7 +133,23 @@ body {
     }
     .socialmedia {
         display: initial;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-around;
         background: black;
+    }
+    .icon {
+        color: white;
+        border: .15rem solid white;
+        padding: 0.3rem;
+        border-radius: 180%;
+        font-size: 1em;
+    }
+    .icon:hover {
+        color: #198754;
+        border-color: #198754;
     }
 }
 
