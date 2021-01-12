@@ -295,7 +295,7 @@ body {
     }
     .contributors {
         flex: 1 1 auto;
-        /* position: relative; */
+        position: relative;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -359,32 +359,6 @@ body {
         border-radius: 1.5rem;
         padding: 1.3rem;
     }
-    /* @media (max-width:392px) {
-        .bottomSection {
-            height: 135vh;
-        }
-        .images {
-            width: 6rem;
-            height: 6rem;
-            padding: 0;
-        }
-        .profile h4 {
-            font-size: .6rem;
-        }
-        .profile p {
-            font-size: .49rem;
-        }
-        .blockquote h1 {
-            font-family: 'Abril Fatface', cursive;
-            color: #e74848;
-            font-size: 1.5rem;
-            font-weight: normal;
-            margin: 0;
-            border: solid .2rem;
-            border-radius: 1.5rem;
-            padding: 1rem;
-        }
-    } */
 }
 
 .animate-bottom {
