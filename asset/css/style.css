@@ -11,7 +11,7 @@ body {
     display: grid;
     /* position: fixed; */
     width: 100%;
-    height: auto;
+    height: 100%;
     grid-template-columns: auto 30%;
     grid-template-rows: 3.5rem auto;
     grid-template-areas: "header header" "flipbook footer";
@@ -148,7 +148,7 @@ body {
 .footerImages img {
     /* background: tomato; */
     /* padding: 15px; */
-    max-width: 100%;
+    max-width: 60%;
     /* height: max-content; */
     color: white;
     flex: 1 1 auto;
