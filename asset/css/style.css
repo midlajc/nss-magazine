@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 body {
     margin: 0;
     padding: 0;
@@ -21,29 +22,33 @@ body {
 
 .header {
     grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background: #dcd994;
     border-radius: 0 0 .4rem .4rem;
+}
+
+.header h2 {
+    color: black;
+    text-align: center;
+    font-size: medium;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .college-logo {
     height: 3rem;
     width: 3rem;
-    position: relative;
-    left: 1%;
+    margin-left: .2rem;
     border-radius: 11px;
-    top: 50%;
-    transform: translate(0%, -50%)
 }
 
 .nss-logo {
     float: right;
     height: 3em;
     width: 3em;
-    position: relative;
-    left: -1%;
+    margin-right: .2rem;
     border-radius: 11px;
-    top: 50%;
-    transform: translate(0%, -50%);
 }
 
 .flipbook {
@@ -61,7 +66,8 @@ body {
     /* background: white; */
     grid-area: footer;
     /* width: 100%; */
-    padding: 1rem;
+    padding: 1rem 1rem 0 1rem;
+    /* padding-right: 0; */
     height: auto;
     display: flex;
     align-items: center;
@@ -260,13 +266,17 @@ body {
         color: #198754;
         border-color: #198754;
     }
-    .modal {
+    .bottom {
         height: 100%;
+        background: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     .bottomSection {
         background: black;
-        height: 100%;
-        width: 100%;
+        position: relative;
+        height: auto;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 4.8rem 80% auto;
@@ -274,10 +284,13 @@ body {
     }
     /* team css */
     .headings {
+        position: relative;
+        background: black;
         grid-area: headings;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        /* display: block; */
     }
     .exitArrow {
         align-self: center;
@@ -292,6 +305,7 @@ body {
         font-weight: normal;
     }
     .team {
+        background: black;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -333,9 +347,9 @@ body {
     .images img {
         /* background: tomato; */
         /* padding: 15px; */
-        width: 70%;
+        width: 71%;
         /* height: 6.2rem; */
-        color: white;
+        /* color: white; */
         /* flex: 1 1 none; */
         /* font-weight: bold; */
         /* font-size: .5rem; */
@@ -343,6 +357,7 @@ body {
     }
     /* quote css */
     .quote {
+        background: black;
         grid-area: quote;
         display: flex;
         flex-direction: column;
@@ -354,14 +369,16 @@ body {
     }
     .blockquote h1 {
         font-family: 'Abril Fatface', cursive;
-        color: #e74848;
+        color: #dcd994;
         font-size: 1.8rem;
         font-weight: normal;
-        margin: 0;
-        border: solid .2rem;
+        border: #dcd994 solid .1rem;
         border-radius: 1.5rem;
-        padding: 1.3rem;
+        padding: 1rem;
     }
+    /* .none {
+        grid-area: none;
+    } */
 }
 
 .animate-bottom {
