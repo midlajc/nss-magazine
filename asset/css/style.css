@@ -9,10 +9,10 @@ body {
 
 .warpper {
     display: grid;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
-    height: 100vh;
-    grid-template-columns: auto 24rem;
+    height: auto;
+    grid-template-columns: auto 30%;
     grid-template-rows: 3.5rem auto;
     grid-template-areas: "header header" "flipbook footer";
     /* grid-gap: 1rem; */
@@ -47,6 +47,10 @@ body {
 }
 
 .flipbook {
+    /* display: flex;
+    flex-wrap: wrap;
+    align-content: center; */
+    /* align-items: center; */
     grid-area: flipbook;
     background: white;
     /* border-radius: .6rem; */
@@ -55,8 +59,9 @@ body {
 .footer {
     /* background: white; */
     grid-area: footer;
-    width: 100%;
+    /* width: 100%; */
     padding: 1rem;
+    height: auto;
     /* background: black; */
     /* border-radius: .6rem .6rem .6rem .6rem; */
     /* border-radius: .6rem; */
@@ -68,11 +73,11 @@ body {
 
 .footer-pc {
     background: black;
-    width: 100%;
-    height: 100%;
+    /* width: 100%; */
+    /* height: 100%; */
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 3rem 70% auto;
+    grid-template-rows: 3rem auto 6rem;
     grid-template-areas: "haeading" "team" "quote";
     border-radius: 2rem;
 }
@@ -101,6 +106,7 @@ body {
 }
 
 .footerContributors {
+    flex: 1 1 auto;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -111,8 +117,9 @@ body {
 
 .footerProfile {
     display: flex;
+    width: calc(100%/3);
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .footerProfile h4 {
@@ -120,6 +127,7 @@ body {
     margin: .1rem;
     /* font-weight: 2rem; */
     font-size: .7rem;
+    flex: 1 1 none;
     color: white;
     text-align: center;
 }
@@ -127,19 +135,25 @@ body {
 .footerProfile p {
     font-family: 'Courier New', Courier, monospace;
     font-size: .5rem;
+    flex: 1 1 none;
     color: white;
     text-align: center;
 }
 
 .footerImages {
+    display: flex;
+    justify-content: center;
+}
+
+.footerImages img {
     /* background: tomato; */
     /* padding: 15px; */
-    width: 5rem;
-    height: 5rem;
+    max-width: 100%;
+    /* height: max-content; */
     color: white;
+    flex: 1 1 auto;
     /* font-weight: bold; */
     font-size: .5rem;
-    align-self: center;
 }
 
 
@@ -182,7 +196,7 @@ body {
     display: none;
 }
 
-@media(max-width:750px) {
+@media(max-width:1080px) {
     .warpper {
         height: 100vh;
         margin: 0;
@@ -245,11 +259,11 @@ body {
     }
     .bottomSection {
         background: black;
-        height: 104%;
+        height: auto;
         width: 100%;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 4.8rem 70% auto;
+        grid-template-rows: 4.8rem 80% auto;
         grid-template-areas: "headings" "contributors" "quote";
     }
     /* team css */
@@ -271,19 +285,26 @@ body {
         align-self: center;
         font-weight: normal;
     }
+    .team {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
     .contributors {
-        position: relative;
+        flex: 1 1 auto;
+        /* position: relative; */
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         flex-wrap: wrap;
         align-content: space-between;
-        /* list-style: none; */
     }
     .profile {
+        flex: 1 1 none;
         display: flex;
+        width: calc(100%/3);
         flex-direction: column;
-        justify-content: center;
+        /* justify-content: center; */
     }
     .profile h4 {
         font-family: 'Courier New', Courier;
@@ -300,13 +321,18 @@ body {
         text-align: center;
     }
     .images {
+        display: flex;
+        justify-content: center;
+    }
+    .images img {
         /* background: tomato; */
         /* padding: 15px; */
-        width: 6.2rem;
-        height: 6.2rem;
+        width: 70%;
+        /* height: 6.2rem; */
         color: white;
+        /* flex: 1 1 none; */
         /* font-weight: bold; */
-        font-size: .5rem;
+        /* font-size: .5rem; */
         align-self: center;
     }
     /* quote css */
@@ -319,7 +345,6 @@ body {
     }
     .blockquote {
         font-family: 'Barlow Condensed', sans-serif;
-        /* margin: auto; */
     }
     .blockquote h1 {
         font-family: 'Abril Fatface', cursive;
@@ -331,7 +356,7 @@ body {
         border-radius: 1.5rem;
         padding: 1.3rem;
     }
-    @media (max-width:392px) {
+    /* @media (max-width:392px) {
         .bottomSection {
             height: 135vh;
         }
@@ -356,7 +381,7 @@ body {
             border-radius: 1.5rem;
             padding: 1rem;
         }
-    }
+    } */
 }
 
 .animate-bottom {
