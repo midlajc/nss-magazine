@@ -147,7 +147,7 @@ body {
 .footerProfile h4 {
     font-family: 'Courier New', Courier;
     margin: .1rem;
-    /* font-weight: 2rem; */
+    /* font-weight: bold; */
     font-size: .7rem;
     flex: 1 1 none;
     color: white;
@@ -345,15 +345,15 @@ body {
     .profile h4 {
         font-family: 'Courier New', Courier;
         margin: .1rem;
-        /* font-weight: 2rem; */
-        font-size: .87rem;
+        /* font-weight: bold; */
+        font-size: .8rem;
         /* width: auto; */
         color: white;
         text-align: center;
     }
     .profile p {
         font-family: 'Courier New', Courier, monospace;
-        font-size: .7rem;
+        font-size: .6rem;
         width: auto;
         color: white;
         text-align: center;
