@@ -198,10 +198,13 @@ body {
 
 .footerBlockquote h1 {
     font-family: 'Abril Fatface', cursive;
+    border: .13rem solid white;
+    border-radius: 1rem;
     color: #e74848;
     font-size: 1.5rem;
     margin: auto;
-    padding: 0.9rem;
+    padding: 0.4rem;
+    margin-bottom: 5%;
 }
 
 .footerQuote h4 {
