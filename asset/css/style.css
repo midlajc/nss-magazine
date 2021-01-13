@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 @font-face {
     font-family: 'akayla';
-    src: url('/asset/fonts/AkaylaScriptDeco_PERSONAL.ttf');
+    src: url('fonts/AkaylaScriptDeco_PERSONAL.ttf');
 }
 
 body {
