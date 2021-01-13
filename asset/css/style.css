@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@font-face {
+    font-family: 'akayla';
+    src: url('/asset/fonts/AkaylaScriptDeco_PERSONAL.ttf');
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -30,10 +35,14 @@ body {
 }
 
 .header h2 {
-    color: black;
+    align-self: flex-end;
+    color: white;
+    font-size: 1.9rem;
     text-align: center;
-    font-size: 1.3rem;
-    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    vertical-align: bottom;
+    /* font-size: 1.3rem; */
+    font-family: akayla;
 }
 
 .college-logo {
@@ -121,7 +130,7 @@ body {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    align-content: space-between;
+    align-content: space-around;
 }
 
 .footerProfile {
@@ -266,13 +275,13 @@ body {
         color: #198754;
         border-color: #198754;
     }
-    .bottom {
+    /* .bottom {
         height: 100%;
         background: black;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-    }
+    } */
     .bottomSection {
         background: black;
         position: relative;
@@ -381,6 +390,11 @@ body {
     /* .none {
         grid-area: none;
     } */
+    @media (max-width:550px) {
+        .header h2 {
+            font-size: 1.16rem;
+        }
+    }
 }
 
 .animate-bottom {
