@@ -9,7 +9,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 @font-face {
     font-family: 'akayla';
-    src: url('https://raw.githubusercontent.com/midlajc/nss-magazine/master/asset/css/fonts/AkaylaScriptDeco_PERSONAL.ttf?token=APGPUFTU46BMPAKEJFQROSLAA7TZO');
+    src: url('https://midlajc.github.io/nss-magazine/asset/css/fonts/AkaylaScriptDeco_PERSONAL.ttf');
 }
 
 body {
@@ -153,7 +153,7 @@ body {
 }
 
 .footerHeadings h4 {
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'akayla';
     color: white;
     font-size: 2rem;
     margin-top: .2rem;
@@ -161,6 +161,11 @@ body {
     -ms-grid-row-align: center;
     align-self: center;
     font-weight: normal;
+}
+
+.hea{
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .footerTeam {
